@@ -1,10 +1,10 @@
 # Phone Addiction Classifier
 
 ### Table of Contents
-- [Problem Statement](### Problem Statement)
-- [About The Repository](### About the repository)
-- [The Data Used](### The Data Used)
-- [How to Run The Project]
+- [Problem Statement](#problem-statement)
+- [About The Repository](#about-the-repository)
+- [The Data Used](#the-data-used)
+- [How to Run This Project](#how-to-run-this-project)
 
 ### Problem Statement
 This project about phone addiction classifier. The goal for this project is model that can classify the addiction level of the user. The level scaled from 0 to 4, the bigger the number, the more addiction the user is.
@@ -44,3 +44,15 @@ App Usage Time (min/day)
 - Data Usage (MB/ day)
 - Gender (female:0, male: 1)
 - User Behavior Class (turn it into (0 to 4), rather than 1 to 5 like in the dataset)
+
+
+## How to Run This Project
+
+1. Prequisites:
+   First, you need to install [pipenv](https://pipenv.pypa.io/en/latest/) and [docker](https://www.docker.com/products/docker-desktop/).
+   
+2. Clone this repository
+  ```bash
+  git clone https://github.com/zenbakle/Student-dropout.git
+  ```
+3. 
