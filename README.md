@@ -1,5 +1,11 @@
 # Phone Addiction Classifier
 
+### Table of Contents
+- [Problem Statement](### Problem Statement)
+- [About The Repository](### About the repository)
+- [The Data Used](### The Data Used)
+- [How to Run The Project]
+
 ### Problem Statement
 This project about phone addiction classifier. The goal for this project is model that can classify the addiction level of the user. The level scaled from 0 to 4, the bigger the number, the more addiction the user is.
 The data used is from kaggle and can be download from this link: 
