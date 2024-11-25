@@ -48,11 +48,39 @@ App Usage Time (min/day)
 
 ## How to Run This Project
 
-1. Prequisites:
+1. Prequisites:\
    First, you need to install [pipenv](https://pipenv.pypa.io/en/latest/) and [docker](https://www.docker.com/products/docker-desktop/).
    
-2. Clone this repository
-  ```bash
-  git clone https://github.com/zenbakle/Student-dropout.git
-  ```
-3. 
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/zenbakle/Student-dropout.git
+   ```
+3. Set up the environment\
+   Make sure that `pipenv` and `docker` already installed.
+   - If `pipenv` didn't install yet, you can run this code:
+     ```bash
+     pip install pipenv
+     ```
+4. Build the dockerfile inside:
+   ```bash
+   docker build -t phone-addiction .
+   ```
+5. Run the docker image:
+   ```bash
+   docker run -it phone-addiction
+   ```
+7. You can access the app through a web browser or API requests, If you have deployed the project using Docker or With the Flask application.
+   ```python
+   url = 'http://localhost:1212/predict'
+
+   client = {"app_usage_time_(min/day)": 183,
+           "screen_on_time_(hours/day)": 4.1,
+           "battery_drain_(mah/day)": 1210,
+           "number_of_apps_installed": 45,
+           "data_usage_(mb/day)": 738,
+           "gender": 1,
+           "user_behavior_class": 2}
+   
+   response = requests.post(url, json=client).json()
+   print(response)
+   ```
