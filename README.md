@@ -53,7 +53,7 @@ App Usage Time (min/day)
    
 2. Clone this repository:
    ```bash
-   git clone https://github.com/zenbakle/Student-dropout.git
+   git clone https://github.com/Rakun12/phone-addiction.git
    ```
 3. Set up the environment\
    Make sure that `pipenv` and `docker` already installed.
